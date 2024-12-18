@@ -46,6 +46,8 @@
 #define BUF_USAGECOUNT_SHIFT 18
 #define BUF_FLAG_MASK 0xFFC00000U
 
+#define BM_POLICY_TYPE_FIFO 1
+
 /* Get refcount and usagecount from buffer state */
 #define BUF_STATE_GET_REFCOUNT(state) ((state) & BUF_REFCOUNT_MASK)
 #define BUF_STATE_GET_USAGECOUNT(state) (((state) & BUF_USAGECOUNT_MASK) >> BUF_USAGECOUNT_SHIFT)
